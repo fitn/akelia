@@ -1,0 +1,39 @@
+{
+    "name": "fitn/akelia",
+    "type": "symfony-bundle",
+    "description": "Connector between Akeneo PIM and Thelia",
+    "keywords": ["pim", "akeneo", "ecommerce", "e-commerce", "thelia", "connector"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain Monceau",
+            "email": "monceau.romain@gmail.com"
+        }
+    ],
+    "require": {
+        "akeneo/pim-community-dev": "1.2.*@stable",
+        "symfony/symfony": "2.3.18",
+        "symfony/icu": "v1.1.0",
+        "guzzle/service": ">=3.6.0,<3.8.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "2.0.*@dev"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/akeneo/pim-community-dev.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/akeneo/platform.git"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "Fitn\\Bundle\\AkeliaBundle\\": "" }
+    },
+    "minimum-stability": "dev"
+}
