@@ -13,8 +13,8 @@
     "require": {
         "akeneo/pim-community-dev": "1.2.*@stable",
         "symfony/symfony": "2.3.*",
-        "symfony/icu": "v1.1.0",
-        "guzzle/service": ">=3.6.0,<3.8.0"
+        "symfony/icu": "1.1.",
+        "thelia/api-client": "~1.0"
     },
     "require-dev": {
         "phpspec/phpspec": "2.1.*@stable",
@@ -31,6 +31,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/akeneo/platform.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/thelia/thelia-api-client.git"
         }
     ],
     "config": {
